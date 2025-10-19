@@ -69,13 +69,13 @@ body {
 
 .profile-section {
   background: rgba(255, 255, 255, 0.95);
-  padding: 2rem;
+  padding: 2.5rem;
   border-radius: var(--border-radius);
   box-shadow: var(--shadow);
   backdrop-filter: blur(10px);
   display: grid;
   grid-template-columns: auto 1fr;
-  gap: 2rem;
+  gap: 2.5rem;
   align-items: center;
 }
 
@@ -84,28 +84,29 @@ body {
   flex-shrink: 0;
 }
 
+/* Larger Profile Image */
 .profile-image {
-  width: 150px;
-  height: 150px;
+  width: 220px;
+  height: 220px;
   border-radius: 50%;
   object-fit: cover;
-  border: 6px solid var(--white);
+  border: 8px solid var(--white);
   box-shadow: var(--shadow);
   animation: float 3s ease-in-out infinite;
 }
 
 .profile-image-placeholder {
-  width: 150px;
-  height: 150px;
+  width: 220px;
+  height: 220px;
   border-radius: 50%;
   background: linear-gradient(135deg, var(--accent-color), var(--secondary-color));
   display: none;
   align-items: center;
   justify-content: center;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   font-weight: bold;
   color: var(--white);
-  border: 6px solid var(--white);
+  border: 8px solid var(--white);
   box-shadow: var(--shadow);
   animation: float 3s ease-in-out infinite;
 }
@@ -114,24 +115,25 @@ body {
 .floating-badge {
   position: absolute;
   background: var(--white);
-  padding: 0.5rem 1rem;
+  padding: 0.6rem 1.2rem;
   border-radius: 25px;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-weight: 600;
   box-shadow: var(--shadow);
   animation: bounce 2s ease-in-out infinite;
+  z-index: 10;
 }
 
 .experience-badge {
-  top: -10px;
-  right: -10px;
+  top: -5px;
+  right: -5px;
   background: linear-gradient(135deg, #ff6b6b, #ee5a24);
   color: var(--white);
 }
 
 .department-badge {
-  bottom: -10px;
-  left: -10px;
+  bottom: -5px;
+  left: -5px;
   background: linear-gradient(135deg, #1dd1a1, #10ac84);
   color: var(--white);
 }
@@ -142,14 +144,15 @@ body {
   gap: 0.5rem;
   margin: 1rem 0;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .mobile-badge {
   background: linear-gradient(135deg, var(--accent-color), var(--secondary-color));
   color: var(--white);
-  padding: 0.4rem 0.8rem;
+  padding: 0.5rem 1rem;
   border-radius: 15px;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-weight: 600;
 }
 
@@ -158,7 +161,7 @@ body {
 }
 
 .name {
-  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  font-size: clamp(2rem, 5vw, 3rem);
   color: var(--text-dark);
   margin-bottom: 0.5rem;
   font-weight: 700;
@@ -168,7 +171,7 @@ body {
 }
 
 .position {
-  font-size: clamp(1.1rem, 3vw, 1.4rem);
+  font-size: clamp(1.2rem, 3vw, 1.6rem);
   color: var(--text-light);
   margin-bottom: 0.5rem;
   font-weight: 600;
@@ -176,7 +179,7 @@ body {
 
 .experience-duration {
   color: var(--text-light);
-  font-size: 1rem;
+  font-size: 1.1rem;
   margin-bottom: 1.5rem;
   font-style: italic;
 }
@@ -190,7 +193,7 @@ body {
   align-items: center;
   gap: 0.8rem;
   margin: 0.8rem 0;
-  font-size: clamp(0.9rem, 2vw, 1.1rem);
+  font-size: clamp(1rem, 2vw, 1.2rem);
   color: var(--text-dark);
 }
 
@@ -205,16 +208,16 @@ body {
 }
 
 .icon {
-  font-size: 1.3rem;
-  width: 30px;
+  font-size: 1.4rem;
+  width: 35px;
   text-align: center;
 }
 
 /* Social Links */
 .social-links {
   display: flex;
-  gap: 0.8rem;
-  margin-top: 1.5rem;
+  gap: 1rem;
+  margin-top: 2rem;
   flex-wrap: wrap;
 }
 
@@ -222,13 +225,13 @@ body {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  padding: 0.7rem 1.2rem;
+  padding: 0.8rem 1.5rem;
   border-radius: 50px;
   text-decoration: none;
   font-weight: 600;
   transition: var(--transition);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  font-size: 0.9rem;
+  font-size: 1rem;
   position: relative;
   overflow: hidden;
 }
@@ -264,12 +267,12 @@ body {
 }
 
 .social-btn:hover {
-  transform: translateY(-2px);
+  transform: translateY(-3px);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
 }
 
 .social-icon {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
 /* Navigation Tabs */
@@ -330,22 +333,30 @@ body {
 }
 
 .section-header h2 {
-  font-size: clamp(1.8rem, 4vw, 2.2rem);
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
   color: var(--white);
   margin-bottom: 1rem;
   font-weight: 700;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
 }
 
+/* Improved Section Subtitle Visibility */
 .section-subtitle {
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 1.1rem;
+  color: #E3F2FD; /* Light blue for better contrast */
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  background: rgba(30, 60, 114, 0.3);
+  padding: 0.5rem 1.5rem;
+  border-radius: 25px;
+  display: inline-block;
+  backdrop-filter: blur(5px);
 }
 
 /* Experience Section */
 .experience-section {
   background: rgba(255, 255, 255, 0.95);
-  padding: 2rem;
+  padding: 2.5rem;
   border-radius: var(--border-radius);
   box-shadow: var(--shadow);
 }
@@ -357,34 +368,35 @@ body {
   gap: 0.5rem;
   background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
   color: var(--white);
-  padding: 1rem 2rem;
+  padding: 1.2rem 2.5rem;
   border-radius: 50px;
   font-weight: 600;
+  margin-bottom: 1rem;
 }
 
 .company-name {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
 .position-tag {
-  font-size: 0.9rem;
+  font-size: 1rem;
   opacity: 0.9;
 }
 
 .departments-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1.5rem;
   margin-top: 2rem;
 }
 
 .department-card {
   background: var(--white);
-  padding: 1.5rem;
+  padding: 1.8rem;
   border-radius: var(--border-radius);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
   transition: var(--transition);
-  border-left: 4px solid var(--primary-color);
+  border-left: 5px solid var(--primary-color);
   position: relative;
   overflow: hidden;
 }
@@ -402,12 +414,12 @@ body {
 }
 
 .department-icon {
-  font-size: 2rem;
+  font-size: 2.2rem;
   flex-shrink: 0;
 }
 
 .department-title {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: var(--text-dark);
   margin-bottom: 0.5rem;
   font-weight: 600;
@@ -416,21 +428,22 @@ body {
 .department-duration {
   background: #e2e8f0;
   color: var(--text-light);
-  padding: 0.3rem 0.8rem;
+  padding: 0.4rem 1rem;
   border-radius: 20px;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-weight: 500;
 }
 
 .department-description {
   color: var(--text-light);
-  line-height: 1.5;
+  line-height: 1.6;
+  font-size: 1rem;
 }
 
 /* Languages Section */
 .languages-section {
   background: rgba(255, 255, 255, 0.95);
-  padding: 2rem;
+  padding: 2.5rem;
   border-radius: var(--border-radius);
   box-shadow: var(--shadow);
 }
@@ -438,13 +451,13 @@ body {
 .languages-container {
   display: grid;
   gap: 1.5rem;
-  max-width: 600px;
+  max-width: 700px;
   margin: 0 auto;
 }
 
 .language-card {
   background: var(--white);
-  padding: 1.5rem;
+  padding: 1.8rem;
   border-radius: var(--border-radius);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
 }
@@ -453,18 +466,19 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 1rem;
+  margin-bottom: 1.2rem;
 }
 
 .language-header h3 {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   color: var(--text-dark);
+  font-weight: 600;
 }
 
 .language-level {
   background: #e2e8f0;
   color: var(--text-light);
-  padding: 0.3rem 0.8rem;
+  padding: 0.4rem 1rem;
   border-radius: 20px;
   font-size: 0.9rem;
   font-weight: 500;
@@ -478,7 +492,7 @@ body {
 
 .progress-bar {
   flex: 1;
-  height: 8px;
+  height: 10px;
   background: #e2e8f0;
   border-radius: 10px;
   overflow: hidden;
@@ -494,30 +508,31 @@ body {
 .percentage {
   color: var(--text-light);
   font-weight: 600;
-  min-width: 40px;
+  min-width: 45px;
+  font-size: 1rem;
 }
 
 /* Certificates Section */
 .certificates-section {
   background: rgba(255, 255, 255, 0.95);
-  padding: 2rem;
+  padding: 2.5rem;
   border-radius: var(--border-radius);
   box-shadow: var(--shadow);
 }
 
 .certificates-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.8rem;
 }
 
 .certificate-card {
   background: var(--white);
-  padding: 1.5rem;
+  padding: 1.8rem;
   border-radius: var(--border-radius);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
   transition: var(--transition);
-  border-top: 4px solid var(--primary-color);
+  border-top: 5px solid var(--primary-color);
 }
 
 .certificate-card:hover {
@@ -527,10 +542,10 @@ body {
 
 .certificate-image-container {
   width: 100%;
-  height: 200px;
+  height: 220px;
   border-radius: 12px;
   overflow: hidden;
-  margin-bottom: 1rem;
+  margin-bottom: 1.2rem;
   position: relative;
   background: #f8f9fa;
 }
@@ -560,12 +575,12 @@ body {
 }
 
 .placeholder-icon {
-  font-size: 3rem;
+  font-size: 3.5rem;
   margin-bottom: 0.5rem;
 }
 
 .placeholder-text {
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 600;
 }
 
@@ -574,7 +589,7 @@ body {
 }
 
 .certificate-title {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   color: var(--text-dark);
   margin-bottom: 0.8rem;
   font-weight: 600;
@@ -584,33 +599,35 @@ body {
   color: var(--accent-color);
   font-weight: 500;
   margin-bottom: 1rem;
+  font-size: 1.1rem;
 }
 
 .certificate-footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 1rem;
+  margin-top: 1.2rem;
 }
 
 .certificate-year {
   color: var(--text-light);
-  font-size: 0.9rem;
+  font-size: 1rem;
+  font-weight: 500;
 }
 
 .certificate-badge {
   background: #48bb78;
   color: var(--white);
-  padding: 0.3rem 0.8rem;
+  padding: 0.4rem 1rem;
   border-radius: 15px;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-weight: 600;
 }
 
 /* Footer */
 .footer {
   background: rgba(255, 255, 255, 0.95);
-  padding: 1.5rem;
+  padding: 1.8rem;
   border-radius: var(--border-radius);
   margin-top: 2rem;
   text-align: center;
@@ -626,8 +643,8 @@ body {
 
 .footer-contact {
   display: flex;
-  gap: 1rem;
-  font-size: 0.9rem;
+  gap: 1.5rem;
+  font-size: 1rem;
   color: var(--text-light);
 }
 
@@ -659,7 +676,7 @@ body {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-10px);
+    transform: translateY(-12px);
   }
 }
 
@@ -668,7 +685,7 @@ body {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-5px);
+    transform: translateY(-8px);
   }
 }
 
@@ -687,9 +704,13 @@ body {
 
   .profile-image,
   .profile-image-placeholder {
-    width: 120px;
-    height: 120px;
+    width: 180px;
+    height: 180px;
     margin: 0 auto;
+  }
+
+  .profile-image-placeholder {
+    font-size: 2.8rem;
   }
 
   .navigation-tabs {
@@ -722,7 +743,7 @@ body {
   .social-btn {
     flex: 1;
     justify-content: center;
-    min-width: 80px;
+    min-width: 100px;
   }
 
   .experience-section,
@@ -765,21 +786,26 @@ body {
   }
 
   .certificate-image-container {
-    height: 180px;
+    height: 200px;
+  }
+
+  .section-subtitle {
+    font-size: 1rem;
+    padding: 0.4rem 1.2rem;
   }
 }
 
 @media (max-width: 480px) {
   .profile-section {
-    padding: 1rem;
+    padding: 1.2rem;
   }
 
   .name {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
 
   .position {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 
   .contact-item {
@@ -787,36 +813,45 @@ body {
   }
 
   .social-btn {
-    padding: 0.6rem 1rem;
-    font-size: 0.8rem;
+    padding: 0.7rem 1.2rem;
+    font-size: 0.9rem;
   }
 
   .department-card,
   .language-card,
   .certificate-card {
-    padding: 1rem;
+    padding: 1.2rem;
   }
 
   .section-header h2 {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
 
   .company-highlight {
-    padding: 0.8rem 1.5rem;
+    padding: 1rem 2rem;
   }
 
   .company-name {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 
   .profile-image,
   .profile-image-placeholder {
-    width: 100px;
-    height: 100px;
+    width: 160px;
+    height: 160px;
+  }
+
+  .profile-image-placeholder {
+    font-size: 2.5rem;
   }
 
   .certificate-image-container {
-    height: 150px;
+    height: 180px;
+  }
+
+  .section-subtitle {
+    font-size: 0.9rem;
+    padding: 0.3rem 1rem;
   }
 }
 
@@ -832,8 +867,8 @@ body {
 
   .profile-image,
   .profile-image-placeholder {
-    width: 140px;
-    height: 140px;
+    width: 200px;
+    height: 200px;
   }
 
   .departments-grid {
@@ -853,12 +888,12 @@ body {
 
   .profile-image,
   .profile-image-placeholder {
-    width: 180px;
-    height: 180px;
+    width: 240px;
+    height: 240px;
   }
 
   .profile-image-placeholder {
-    font-size: 3rem;
+    font-size: 4rem;
   }
 }
 
